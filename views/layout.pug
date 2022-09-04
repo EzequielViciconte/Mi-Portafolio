@@ -1,0 +1,57 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/css/style.css')
+  link(rel='stylesheet' href='/css/all.css')
+  link(rel="icon" href="/img/LogoHecemiTodoDulce.png")
+  link(href='https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap' rel='stylesheet')
+  link(href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet")
+  link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.css")
+  title= NombrePagina
+header
+  nav#NavBar.Contenedor
+    a(href="/") 
+      .Logo 
+        img(src="/img/Logo.png", alt="Logo")
+        p  Ezequiel Viciconte
+    ul.Lista-Navegacion.Invisible
+      li
+        a(href='#Inicio') Inicio
+      li
+        a(href='#projects') Proyectos
+      li
+        a(href='#Contacto') Contactos
+.MenuMov
+  i(class="fa-solid fa-bars")
+
+section#Inicio.SeccionBienvenida
+  .Background
+  #particles-js
+  .Contenedor.ContenedorBienvenida
+    h1.Titulo Hola,
+      span.typed
+    
+    .Titulo#cadenas-texto
+      p Yo Soy Ezequiel Vicionte
+      p Este es mi Portafolio!!
+    p.DescripcionMia 
+
+ 
+block Contenido
+
+    
+footer.Footer.Seccion
+   p.ParrafoFooter=`Todos los derechos Reservados a Ezequiel Viciconte ${locals.Año}.`
+
+script(src='/dist/bundle.js')
+//- script(src='https://code.jquery.com/jquery-3.4.1.min.js' integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=' crossorigin='anonymous')
+// Google Analytics: change UA-XXXXX-Y to be your site's ID.
+script.
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+script(src='https://www.google-analytics.com/analytics.js' async='')
+script(src='https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js')
+

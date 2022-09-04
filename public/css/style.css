@@ -1,0 +1,520 @@
+:root {
+    --FuentePrincipal: 'Imperial Script', cursive;
+    --FuenteSecundaria: 'Amatic SC', cursive;
+    --ColorPrincipal:#1a1a40;
+    --AzulOscuro:#082032;
+    --Negro:#000000;
+    --Rojo: #4c0027;
+    --Verde: #1e5128;
+    --Violeta: #71115a;
+}
+
+body{
+    margin: 0;
+    line-height: 2.2rem;
+    font-family: 'Staatliches', cursive;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+h2{
+    font-size: 3rem;
+    color: white;
+    line-height: 3rem;
+    text-align: center;
+}
+/* Globales */
+header .Invisible{
+    opacity: 0;
+    display: none;
+}
+
+.Contenedor{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    background-color:#00000036;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+#NavBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.Logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Logo p{
+    color: white;
+    padding: 0rem 1rem;
+    font-size: 1.5rem;
+}
+#NavBar img{
+    width: 15%;
+}
+
+.MenuMov{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: fixed;
+    right: 2%;
+    background: var(--Rojo);
+    bottom: 1%;
+    z-index: 2;
+}
+
+.MenuMov i {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top:8px ;
+}
+
+.Lista-Navegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Lista-Navegacion li {
+    padding: 0rem 1rem;
+    transition: all .5s;
+}
+
+.Lista-Navegacion li a {
+    text-decoration: none;
+    color: white;
+    font-family:monospace;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+
+.Negro{
+    background-color: var(--ColorPrincipal);
+}
+
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+@media (min-width:1024px){
+    header{
+        padding: 0rem 0.5rem;
+    }
+    #NavBar{
+        flex-direction: row;
+    }
+    .Logo{
+        justify-content: flex-start;
+    }
+    header .Lista-Navegacion{
+        display: flex;
+        flex-direction: row;
+        opacity: 1;
+    }
+    .Lista-Navegacion li:hover  {
+        background-color: rgb(71, 17, 17);
+        padding: 0.5rem;
+        transition: all .5s;
+        border-radius: 0.5rem;
+    }
+
+.MenuMov{
+    display: none;
+}
+}
+
+
+
+/* Bienvenida */
+
+.SeccionBienvenida{
+    height: 100%;
+    background-image: url(https://img.freepik.com/premium-photo/desktop-source-code-wallpaper-by-computer-language-with-coding-programming_33771-594.jpg?w=2000);
+    background-size: cover;
+    position: relative;
+}
+.Background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(50,49,49);
+    background: radial-gradient(circle, #4c002782 0%, var(--ColorPrincipal) 100%);
+
+}
+
+.ContenedorBienvenida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14rem 0rem;
+
+}
+.Titulo{
+    color: white;
+    font-size: 2.8rem;
+    text-align: center;
+    z-index: 1;
+}
+.DescripcionMia{
+    margin-top: -1.5rem;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+@media (min-width:1024px){
+    .Titulo{
+        font-size: 4rem;
+
+    }
+}
+
+
+
+/* Seccion Tecnologia */
+.SeccionTecnologias{
+    background: radial-gradient(circle, var(--Violeta) -90%, rgba(10,6,48,1) 100%);
+    padding: 5rem 0rem;
+    animation:MOVE 2s linear infinite alternate;
+    background-size: 200%;
+    height: 100%;
+    position: relative;
+}
+.ContenedorTecnologias{
+    overflow: hidden;
+}
+
+
+.divFondo{
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    left: -10%;
+    top: -13%;
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+}
+
+
+.SobreMi{
+    font-size: 1.7rem;
+    width: 100%;
+    color: white;
+    z-index: 2;
+}
+
+.Tecnologias{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-size: 2.5rem;
+    width: 100%;
+    z-index: 2;
+}
+
+.Tecnologia{
+    padding: 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Tecnologia{
+    animation-name: Scale;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+}
+.Tecnologia:nth-child(2n){
+    transition: all 1s;
+}
+
+.Tecnologia .html{
+    color: #e44f26;
+}
+.Tecnologia .css{
+    color: #214ce5;
+}
+.Tecnologia .js{
+    color: #efd81d;
+}
+.Tecnologia .node{
+    color: #8ac400;
+}
+.Tecnologia .github{
+    color: white;
+}
+
+.Tecnologia P{
+    font-size: 1.5rem;
+    margin: .5rem 0rem ;
+    text-transform: uppercase;
+    color: white;
+    z-index: 2;
+}
+
+@media (min-width:1024px){
+    .ContenedorTecnologias{
+        display: flex;
+        align-items: center;
+
+    }
+    .SobreMi{
+        font-size: 1.7rem;
+        line-height: 2.7rem;
+        width: 50%;
+        color: white;
+        z-index: 2;
+    }
+    .Tecnologias{
+        display: flex;
+        font-size: 5rem;
+        width: 50%;
+    }
+    .divFondo{
+        position: absolute;
+        z-index: 1;
+        overflow: hidden;
+        left: 0%;
+        top: 0;
+        opacity: .5;
+
+    }
+}
+
+
+/* Proyectos */
+.SeccionProyectos{
+    background: radial-gradient(circle, rgba(41,41,91,1) 1%, rgba(10,6,48,1) 100%);
+    height: 100%;
+    padding: 8rem 0rem;
+}
+.TituloPro{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+    margin: 0 auto;
+}
+.ContenedorProyectos{
+    display: block;
+}
+.Proyecto{
+    transition: all .5s;
+    cursor: pointer;
+    position: relative;
+    margin: 3rem 0;
+}
+
+.Proyecto::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 13px -1px rgba(255, 255, 255, 0.44);
+    -webkit-box-shadow: 0px 0px 13px -1px rgb(255 255 255 / 44%);
+    -moz-box-shadow: 0px 0px 13px -1px rgba(255, 255, 255, 0.44);
+    height: 100%;
+}
+.Proyecto:hover{
+    transform: scale(1.1);
+}
+
+
+.Proyecto:hover::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0 0 1rem 0 rgb(0 0 0 / 20%);
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+    
+}
+
+.Proyecto .divAcciones  {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    z-index: 3;
+}
+
+.Proyecto .divAcciones .Icono{
+    padding: 0rem 18%;
+    transform: translate(-172%, 0px);
+    transition: transform 1s;
+}
+.Proyecto .Icono p{
+    font-size: 11px;
+    margin: 0;
+    padding: 0px;
+    background: none;
+    border-radius: 0;
+}
+
+.Proyecto .divAcciones i {
+    color: white;
+    font-size: 3rem;
+
+}
+
+.Proyecto:hover  .Icono  {
+    transform: translate(0rem, 0px);
+    transition: transform 1s;
+}
+
+.Proyecto img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+.Proyecto p{
+    color: white;
+    text-align: center;
+    background: rgb(4 0 32);
+    padding: 8px;
+    margin: -5px 0.5px;
+    border-radius: 1rem;
+}
+
+
+@media (min-width:1024px){
+    .ContenedorProyectos{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2.5rem;
+        margin-top: 5rem;
+        margin-bottom:5rem;
+    }
+    .Proyecto{
+        margin: 0;
+    }
+    
+}
+
+
+
+/* Contacto */
+.SeccionContacto{
+    background-color: rgb(4 0 32);
+    padding: 1rem;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+.TituloCon{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+.ContenedorContacto{
+    padding: 3rem 0rem;
+
+}
+.ContenedorElemento{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.ContenedorElemento a{
+    color: white;
+    padding: 1rem 3rem;
+    text-align: center;
+    font-size: 2.3rem;
+}
+.ContenedorElemento a i{
+    margin-right: 5px;
+}
+
+
+@media (min-width:1024px){
+    .ContenedorElemento{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    .ContenedorElemento a{
+        color: white;
+        padding: 0rem 3rem;
+        font-size: 2.3rem;
+    }
+    .TituloCon{
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+/* footer */
+footer{
+    background:  rgba(10, 6, 48, 0.863);
+    padding: .5rem;
+}
+footer p{
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+/* Funciones */
+
+@keyframes Scale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes MOVE {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+
+
+
+

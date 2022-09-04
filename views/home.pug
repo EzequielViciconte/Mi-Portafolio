@@ -1,0 +1,99 @@
+extends layout
+
+
+block Contenido
+    section.SeccionTecnologias
+        h2 Sobre Mi
+        .Contenedor.ContenedorTecnologias
+            .divFondo
+                <svg width="100%" height="100%" viewBox="0 0 140 140">
+                    <g fill="none" fill-rule="evenodd">
+                        <g fill="#1a1a40" fill-opacity=".15" transform="translate(0 6)">
+                        <polygon points="70 0 136.574 48.369 111.145 126.631 28.855 126.631 3.426 48.369"></polygon>
+                        <polygon points="70 18 119.455 53.931 100.565 112.069 39.435 112.069 20.545 53.931"></polygon>
+                        <polygon points="70 34.86 101.727 57.911 89.609 95.209 50.391 95.209 38.273 57.911"></polygon>
+                        <polygon points="70 50.898 84.864 61.697 79.186 79.171 60.814 79.171 55.136 61.697"></polygon>
+                        </g>
+                        <polygon class="polymorph" stroke-width="1" stroke="gray" points="70 24.091365579492006 119.621067116708 60.352388076455995 100.114544806836 117.583932883292 50.794089613671986 101.716828271644 3.5229028873400097 54.39668653924 "></polygon>
+                    </g>
+                    </svg>
+            .SobreMi 
+                p Yo soy Ezequiel Adrian Viciconte,un desarrollador Web apasionado por la programacion,motivado cada dia por aprender mas y asi estar continuamente mejorando.
+                p Llevo 2 años de experiencia trabajando como desarrollador web fron end y back end.Cuento con varios proyectos desarrollados por mi que avalan mi trayectoria.
+            .Tecnologias 
+                .Tecnologia 
+                    i(class="fa-brands fa-html5 html")
+                    p html5
+                .Tecnologia 
+                    i(class="fa-brands fa-css3 css")
+                    p Css
+                .Tecnologia 
+                    i(class="fa-brands fa-js js")
+                    p JS
+                .Tecnologia 
+                    i(class="fa-brands fa-node-js node")
+                    p Node
+                .Tecnologia 
+                    i(class="fa-brands fa-github github")
+                    p GitHub
+
+    section#projects.SeccionProyectos.projects
+        h2.TituloPro Mis Recientes Proyectos
+        .Contenedor.ContenedorProyectos
+            .Proyecto
+                    img(src='/img/Hecemi.jpg' alt='PaginaTributo')
+                    .divAcciones  
+                        .Icono
+                            a(href="https://github.com/EzequielViciconte/hecemitododulce" target="blank") 
+                                i(class="fa-brands fa-github github")
+                            p Ver Github
+                        .Icono
+                            a(href="https://hecemitododulce.click/" target="blank") 
+                                i(class="fa-solid fa-diamond-turn-right")
+                            p Ver Web
+                    p Tienda Virtual
+            .Proyecto
+                    img(src='/img/DevJobs.jpg' alt='DevJobs')
+                    .divAcciones  
+                        .Icono
+                            a(href="https://github.com/EzequielViciconte/DevJobs" target="blank") 
+                                i(class="fa-brands fa-github github")
+                            p Ver Github
+                        .Icono
+                            a(href="https://devjobs12.herokuapp.com/" target="blank") 
+                                i(class="fa-solid fa-diamond-turn-right")
+                            p Ver Web
+                    p DevJobs
+            .Proyecto
+                    img(src='/img/Pronostica.jpg' alt='DevJobs')
+                    .divAcciones  
+                        .Icono
+                            a(href="https://github.com/EzequielViciconte/Pronostica" target="blank") 
+                                i(class="fa-brands fa-github github")
+                            p Ver Github
+                        .Icono
+                            a(href="https://pronostica.netlify.app/" target="blank") 
+                                i(class="fa-solid fa-diamond-turn-right")
+                            p Ver Web
+                    p Pronostica
+
+
+
+                     
+    section#Contacto.Contacto.SeccionContacto
+        .Contenedor.ContenedorContacto
+            h2.TituloCon Contactate Conmigo...
+            .ContenedorElemento
+                a#profile-link(target='blank' href='https://github.com/EzequielViciconte')
+                    i.fab.fa-github
+                    | GitHub
+                a(href='#')
+                    i.fas.fa-envelope
+                    | Envia un Email
+                a(href='')
+                    i.fa-brands.fa-instagram
+                    | Instagram
+
+
+
+                
