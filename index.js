@@ -22,7 +22,8 @@ app.use((req, res, next) => {
 // Routing
 app.use('/',router());
 
-// Agregar el puerto
-app.listen('3000',()=>{
-    console.log('El servidor Se ejecuta correctamente')
+const host = '0.0.0.0';
+const port = 3000;
+app.listen(port,host,() =>{
+    console.log('el servidor esta funcionando')
 })
