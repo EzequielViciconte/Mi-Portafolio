@@ -149,7 +149,7 @@ header{
 
 .SeccionBienvenida{
     height: 100%;
-    background-image: url(https://img.freepik.com/premium-photo/desktop-source-code-wallpaper-by-computer-language-with-coding-programming_33771-594.jpg?w=2000);
+    background-image: url('../img/Bienvenida.webp');
     background-size: cover;
     position: relative;
 }
@@ -265,6 +265,9 @@ header{
 .Tecnologia .github{
     color: white;
 }
+.Tecnologia .react{
+    color: #61dbfb;
+}
 
 .Tecnologia P{
     font-size: 1.5rem;
@@ -288,8 +291,8 @@ header{
         z-index: 2;
     }
     .Tecnologias{
-        display: flex;
         font-size: 5rem;
+        gap: 2rem;
         width: 50%;
     }
     .divFondo{
