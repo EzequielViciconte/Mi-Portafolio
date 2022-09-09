@@ -23,7 +23,7 @@ app.use((req, res, next) => {
 app.use('/',router());
 
 const host = '0.0.0.0';
-const port = 3000;
-app.listen(port,host,() =>{
+const port = process.env.PORT;
+app.listen(port ,host,() =>{
     console.log('el servidor esta funcionando')
 })
